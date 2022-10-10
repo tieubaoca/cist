@@ -1,0 +1,14 @@
+syntax = "proto3";
+package cist.cist;
+
+import "gogoproto/gogo.proto";
+import "cist/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "cist/x/cist/types";
+
+// GenesisState defines the cist module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  // this line is used by starport scaffolding # genesis/proto/state
+}

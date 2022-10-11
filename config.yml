@@ -11,6 +11,11 @@ client:
     path: "docs/static/openapi.yml"
   vuex:
     path: "vue/src/store"
+
+client:
+  typescript: 
+    path: "ts-client"
+
 faucet:
   name: bob
   coins: ["5token", "100000stake"]

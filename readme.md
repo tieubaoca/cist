@@ -13,22 +13,37 @@ curl https://get.ignite.com/username/cist@latest! | sudo bash
 
 ### Local 1 node 
 #### Start chain
+```
 ignite chain serve
-
+```
 #### Test account, transaction on browser
-cd vue 
+```
+cd vue
+```
+```
 npm install
+```
+```
 npm run dev
-
-### Local 3 node (testnet)
+```
+### Local 3 node (testnet)```
+```
 cd scripts
+```
+```
 chmod +x multinode-testnet.sh
-
+```
 #### Test transaction on local
-
+```
 cistd keys add account_test --node "tcp://localhost:50000" (port 1 node)  // Create 1 account
-cistd tx bank send node0 address_account_test 100ucist --home path-node0 --keyring-backend test --node "tcp://localhost:50000" //send token from address node to address user
+```
+```
+cistd tx bank send node0 address_account_test 100ucist --home path-node0 --keyring-backend test --node "tcp://localhost:50000" //send token from address 
+node to address user
+```
+```
 cistd query bank balances address_account_test --node "tcp://localhost:50000" // Query account test
+```
 #### Test with API: Link git: 
 
 
